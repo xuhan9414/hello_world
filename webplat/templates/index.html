@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<% load staticfiles %>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/css/main.css' %}" rel="stylesheet">
+    <script type="test/javascript" src="{% static 'scripts/jquery.min.js' %}"></script>
+    <script type="test/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <!--[if lte IE 9]>
+    <script src="bootstrap/js/response.min.js"></script>
+    <script src="bootstrap/js/html5shiv.min.js"></script>
+    <![endif]-->
+    <title>xh的处理工具平台</title>
+</head>
+<body>
+    <div class="panel" style="margin-top:20px;margin-left:3%;margin-right:3%;" >
+        <h1><a href="/">xh的处理工具平台</a></h1>
+        <h3></h3>
+        <br>
+        <dl>
+            <dt>
+                <b class="btn btn-large" style="background-color:#a9acde;">持续集成</b>
+                <a href="/ci/summary" class="btn btn-large" style="background-color:#a9acde;">测试结果总览</a>
+            </dt>
+        </dl>
+        <dl>
+            <dt>
+                <b class="btn btn-large" style="background-color:#a9acde;">数据分析</b>
+                <a href="/data_analyse/ue" class="btn btn-large" style="background-color:#b9acde;">商用终端测试数据分析</a>
+
+                <a href="/data_analyse/probe" class="btn btn-large" style="background-color:#b9acde;">Probe数据分析</a>
+                <a href="/data_analyse/dingli" class="btn btn-large" style="background-color:#b9acde;">Dingli数据分析</a>
+
+                <a href="/data_analyse/dingli_SA" class="btn btn-large" style="background-color:#b9acde;">Dingli数据分析</a>
+
+                <a href="/data_analyse/ldt" class="btn btn-large" style="background-color:#b9acde;">LDT数据分析</a>
+                <a href="/data_analyse/cpm" class="btn btn-large" style="background-color:#b9acde;">基站吞吐率监测数据分析</a>
+
+            </dt>
+        </dl>
+        <dl>
+            <dt>
+                <b class="btn btn-large" style="background-color:#a9acde;">专题测试</b>
+                <a href="/subject/emf" class="btn btn-large" style="background-color:#b9acde;">EMF测试</a>
+                <a href="/subject/channel_coverage" class="btn btn-large" style="background-color:#b9acde;">信道覆盖</a>
+            </dt>
+        </dl>
+                <dl>
+            <dt>
+                <b class="btn btn-large" style="background-color:#a9acde;">测试辅助</b>
+                <a href="/assist/param" class="btn btn-large" style="background-color:#b9acde;">参数检测</a>
+                <a href="/assist/env" class="btn btn-large" style="background-color:#b9acde;">环境信息</a>
+                <a href="/assist/csv" class="btn btn-large" style="background-color:#b9acde;">合并csv</a>
+                <a href="/assist/navam" class="btn btn-large" style="background-color:#b9acde;">NGVAM场景文件</a>
+                <a href="/assist/cmcc" class="btn btn-large" style="background-color:#b9acde;">CMCC LOG</a>
+            </dt>
+        </dl>
+        <p>{{ data }}</p>
+        <br>
+        <strong style="color: #2aabd2"></strong>
+        <br>
+    </div>
+</body>
+</html>

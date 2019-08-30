@@ -1,15 +1,15 @@
 <? xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtmll-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtmll-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml":lang="en" lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>登录</title>
 </head>
 <body>
-    <div class="panel" style="margin_top:20px;margin_left:3%;margin_right:3%;" >
+    <div class="panel" style="margin-top:20px;margin-left:3%;margin-right:3%;" >
         <h1>登录</h1>
-        <p>请输入密码</p>
-        <form method="POST" action="/login/" enctype="multipart/form-data" >
+        <p>请使用账号登录</p>
+        <form method='POST' action="/login_hw/" enctype="multipart/form-data" >
     <div>
         <span>
             账号:
@@ -23,10 +23,9 @@
             <input type="password" name = "pass_word"/>
                 <h5 style="color:red">{{ error }}</h5>
     </div>
-    <div>
         { % csrf_token % }
         {{ uf.as_p }}
-        <input type="submit" value="OK">
+        <input type="submit" value="ok"/>
         </form>
         <br>
         {{ infostr }}

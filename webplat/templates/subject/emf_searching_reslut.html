@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<% load staticfiles %>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/css/main.css' %}" rel="stylesheet">
+    <script type="test/javascript" src="{% static 'scripts/jquery.min.js' %}"></script>
+    <script type="test/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <!--[if lte IE 9]>
+    <script src="bootstrap/js/response.min.js"></script>
+    <script src="bootstrap/js/html5shiv.min.js"></script>
+    <![endif]-->
+    <title>分析数据查询</title>
+</head>
+<body>
+    <div><h3>日期：</h3></div>
+    <div class="a" style="margin-top:20px;margin-bottom:20px ;margin-left:40%;margin-right:3%;" >
+        {% for row in result %}
+            <a href="/subject/emf_time_searching/?date={{ row }}" >{{ row }}</a>
+            <br/>
+            {% csrf_token %}
+        {% endfor %}
+    </div>
+    <div class="a" style="margin-top:20px;margin-bottom:20px ;margin-left:35%;margin-right:3%;" >
+     <a href="/subject/emf/" class="btn btn-large" style="background-color: #b9acde;">返回上级</a>
+    </div>
+</body>
+</html>

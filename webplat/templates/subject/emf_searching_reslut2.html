@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<% load staticfiles %>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/css/main.css' %}" rel="stylesheet">
+    <script type="test/javascript" src="{% static 'scripts/jquery.min.js' %}"></script>
+    <script type="test/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <!--[if lte IE 9]>
+    <![endif]-->
+    <title>测试数据分析</title>
+</head>
+<body>
+    <div class="panel" style="margin-top:20px;margin-left:3%;margin-right:3%;" >
+        <h3>分析结果</h3>
+        <br>
+{#        <input type="text" value="{{ results.user }}/{{ results.date }}/{{ results.time }}/{{ results.name }}"#}
+{#            name="path" style="display: none"/>#}
+{#        <span>#}
+{#            {{ result }}#}
+{#        </span>#}
+
+        <br>
+        <a href="/subject/emf_download/?date={{ results.date }}&time={{ results.time }}&picture={{ results.rank_mcs }}">
+            <img src="/subject/medias1/{{ results.user }}/{{ results.date }}/{{ results.time }}/{{ results.rank_mcs }}"/>
+        </a>
+
+        {% csrf_token %}
+        <br>
+        <a href="/subject/medias1/{{ results.user }}/{{ results.date }}/{{ results.time }}/{{ results.name }}">数据下载</a>
+    </div>
+    <div class="a" style="margin-top:20px;margin-bottom:20px ;margin-left:35%;margin-right:3%;" >
+         <a href="/subject/emf_date_searching" class="btn btn-large" style="background-color: #b9acde;">返回上级</a>
+    </div>
+</body>
+</html>

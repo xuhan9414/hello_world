@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<% load staticfiles %>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/css/main.css' %}" rel="stylesheet">
+    <script type="test/javascript" src="{% static 'scripts/jquery.min.js' %}"></script>
+    <script type="test/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <!--[if lte IE 9]>
+    <script src="bootstrap/js/response.min.js"></script>
+    <script src="bootstrap/js/html5shiv.min.js"></script>
+    <![endif]-->
+    <title>emf数据分析</title>
+</head>
+<body>
+    <div class="panel" style="margin-top:20px;margin-left:3%;margin-right:3%;" >
+        <!--h4><a href='/'>返回</a></h4-->
+                <h4>请上传AUU功率检测文件</h4>
+        <br>
+        <form method='POST' action="/subject/analyse_emf/" enctype="multipart/form-data" >
+            <input type="file" name="myfile" />
+            <br/>
+            <div>
+                <span>
+                    Maxtrp(0.1dBm):
+                </span>
+            <input type="text" name = "maxtrp"/>
+            </div>
+            <br/>
+            <div>
+                <span>
+                    EMFPeriod(s):
+                </span>
+            <input type="text" name = "emfperiod"/>
+            </div>
+            <br/>
+            <div>
+                <span>
+                    MaxThrd(0.1dBm):
+                </span>
+            <input type="text" name = "maxthrd"/>
+            </div>
+            <br/>
+            <div>
+                <span>
+                    TRXPort:
+                </span>
+            <input type="text" name = "trxport"/>
+            </div>
+            <br/>
+            <p>
+                <span>
+                    子帧配比:
+                </span>
+                <select name="zzpb">
+                    <!--<option value = "??">7:3</option>-->
+                    <option value="1">4:1</option>
+                    <option value="2">8:2</option>
+                </select>
+            </p>
+            <br/>
+            <input type="submit" value="上传并分析">
+            <p>{{ upload_result }}</p>
+            {% csrf_token %}
+        </form>
+        <form enctype="multipart/form-data" action="/subject/emf_date_searching/" method="post">
+            <input type="submit" value="查询历史记录"/>
+            {% csrf_token %}
+        </form>
+    </div>
+{#    <hr style="height: 1px;border:none;border-top:1px solid #555555;"/>#}
+        <div class="panel" style="margin-top:20px;margin-left:3%;margin-right:3%;" >
+            <form action="/subject/emf_add/" method="get">
+                <h4>通道能量计算</h4>
+                <br/>
+                单通道能力(0.1dBm):<input type="text" id = "a" name="a"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通道数:
+                <input type="text"> id="b" name="b"> <br>
+                <button type="button" id="sum">计算</button>
+                <p>AAU总能量： <span id="result"></span></p>
+            </form>
+            <script type="text/javascript" src="{% static 'scripts/jquery.min.js' %}"></script>
+            <script>
+                $(document).ready(function () {
+                    $("#sum").click(function () {
+                        var a = $("#a").val();
+                        var b = $("#b").val();
+                        $.get("/subject/emf_add/",{'a':a,'b':b}),function (ret) {
+                            $('#result').html(ret)
+                        })
+                    });
+                });
+                </script>
+        </div>
+{#    <hr style="height: 1px;border:none;border-top:1px solid #555555;"/>#}
+    <div class="a" style="margin-top:20px;margin-bottom:20px ;margin-left:35%;margin-right:3%;" >
+         <a href="/index/" class="btn btn-large" style="background-color: #b9acde;">返回上级</a>
+    </div>
+</body>
+</html>
