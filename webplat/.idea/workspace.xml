@@ -2,57 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7dfff4ad-e45a-4f52-96d9-8ac0613b2b47" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../rs_server/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rs_server/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rs_server/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rs_server/.idea/rs_server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rs_server/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rs_server/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rs_server/comm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rs_server/pyvenv.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rs_server/rs_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rs_server/rs_server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webplat.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_login/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_login/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_login/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_login/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_login/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_login/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_login/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_subject/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_subject/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_subject/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_subject/emf_cal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_subject/emf_data_analyse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_subject/emf_history.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_subject/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_subject/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_subject/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_subject/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_subject/views_channel_coverage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_subject/views_emf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyvenv.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/subject/emf_analyse.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/subject/emf_resluts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/subject/emf_searching_reslut.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/subject/emf_searching_reslut1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/subject/emf_searching_reslut2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utility/FileOperating.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utility/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webplat/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webplat/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webplat/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webplat/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_login/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_login/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login_hw.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_assist/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_assist/view_csv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/highcharts/exporting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/highcharts/highcharts-more.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/highcharts/highcharts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scripts/echarts.common.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scripts/echarts.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/scripts/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/assist/csv_merge.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/assist/csv_merge_resluts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/history.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,67 +22,90 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/webplat$manage.coverage" NAME="manage Coverage Results" MODIFIED="1567088170783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/webplat$manage.coverage" NAME="manage Coverage Results" MODIFIED="1567242419734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2129007545">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="7" />
+          <entry key="js" value="2" />
+          <entry key="py" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="7" />
+          <entry key="JavaScript" value="2" />
+          <entry key="Python" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="991" />
+          <entry key="py" value="2412" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="991" />
+          <entry key="Python" value="2412" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/PY37/Lib/importlib/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2375">
-              <caret line="126" column="29" selection-start-line="126" selection-start-column="29" selection-end-line="126" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/login_hw.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="49" selection-start-line="13" selection-start-column="8" selection-end-line="16" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/subject/emf_analyse.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="22" lean-forward="true" selection-end-line="15" selection-end-column="6" />
+            <state>
+              <caret selection-end-line="16" selection-end-column="80" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#2764#2770#0#HTML" expanded="true" />
-                <element signature="e#2770#2776#0#HTML" expanded="true" />
-                <element signature="e#2776#2782#0#HTML" expanded="true" />
-                <element signature="e#2782#2788#0#HTML" expanded="true" />
-                <element signature="e#2788#2794#0#HTML" expanded="true" />
-                <element signature="e#2794#2800#0#HTML" expanded="true" />
-                <element signature="e#2800#2806#0#HTML" expanded="true" />
-                <element signature="e#2806#2812#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/subject/emf_resluts.html">
+        <entry file="file://$PROJECT_DIR$/app_subject/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="25" column="56" lean-forward="true" selection-start-line="25" selection-end-line="26" />
+            <state relative-caret-position="300">
+              <caret line="13" column="65" selection-end-line="24" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app_assist/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/assist/csv_merge.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="19" selection-start-line="19" selection-end-line="20" selection-end-column="56" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -134,61 +118,68 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/subject/emf_searching_reslut.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="22" column="20" lean-forward="true" selection-end-line="28" selection-end-column="7" />
+            <state relative-caret-position="296">
+              <caret line="22" column="20" selection-end-line="28" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/assist/csv_merge_resluts.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
               <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/subject/emf_searching_reslut1.html">
+        <entry file="file://$PROJECT_DIR$/static/highcharts/exporting.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-end-line="22" />
+            <state>
               <folding>
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/scripts/jquery.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/subject/emf_searching_reslut2.html">
+        <entry file="file://$PROJECT_DIR$/templates/subject/emf_searching_reslut1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+            <state relative-caret-position="346">
+              <caret line="24" selection-start-line="24" selection-end-line="25" selection-end-column="109" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/PY37/Lib/importlib/_bootstrap.py">
+        <entry file="file://$PROJECT_DIR$/templates/subject/emf_searching_reslut2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18563">
-              <caret line="977" column="19" selection-start-line="977" selection-start-column="19" selection-end-line="977" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webplat/wsgi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="296">
+              <caret line="30" column="109" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="109" />
               <folding>
-                <element signature="e#223#232#0" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -238,14 +229,27 @@
         <option value="$PROJECT_DIR$/templates/subject/emf_searching_reslut.html" />
         <option value="$PROJECT_DIR$/templates/subject/emf_searching_reslut1.html" />
         <option value="$PROJECT_DIR$/templates/subject/emf_searching_reslut2.html" />
+        <option value="$PROJECT_DIR$/templates/history.html" />
+        <option value="$PROJECT_DIR$/app_assist/models.py" />
+        <option value="$PROJECT_DIR$/app_assist/view_csv.py" />
+        <option value="$PROJECT_DIR$/app_assist/migrations/urls.py" />
+        <option value="$PROJECT_DIR$/app_assist/urls.py" />
+        <option value="$PROJECT_DIR$/templates/assist/csv_merge.html" />
+        <option value="$PROJECT_DIR$/templates/assist/csv_merge_resluts.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-99" />
-    <option name="y" value="129" />
-    <option name="width" value="1890" />
-    <option name="height" value="960" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="104" />
+    <option name="y" value="17" />
+    <option name="width" value="1918" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -253,6 +257,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -263,19 +268,28 @@
             <path>
               <item name="webplat" type="b2602c69:ProjectViewProjectNode" />
               <item name="webplat" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="app_assist" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="webplat" type="b2602c69:ProjectViewProjectNode" />
               <item name="webplat" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="subject" type="462c0819:PsiDirectoryNode" />
+              <item name="app_assist" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webplat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webplat" type="462c0819:PsiDirectoryNode" />
+              <item name="app_subject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webplat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webplat" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -288,10 +302,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\web\webplat\static\scripts" />
+      <recent name="D:\web\webplat\static\highcharts" />
       <recent name="D:\github\webplat\app_subject" />
       <recent name="D:\github\webplat\webplat" />
       <recent name="D:\github\webplat\app_login" />
-      <recent name="D:\github\webplat\app_login\" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -392,15 +407,15 @@
     <option name="totallyTimeSpent" value="42433000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="104" y="17" width="1918" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.261924" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26749194" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37300178" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37235227" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -409,7 +424,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.28063944" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.28555176" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -421,67 +436,15 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="login" />
     <option name="LAST_COMMIT_MESSAGE" value="login" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/manage.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app_cmdb/admin.py" />
-    <entry file="file://$PROJECT_DIR$/app_cmdb/apps.py" />
-    <entry file="file://$PROJECT_DIR$/app_login/migrations/urls.py" />
-    <entry file="file://C:/PY37/Lib/site-packages/django/shortcuts.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/PY37/Lib/site-packages/numpy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/PY37/Lib/site-packages/django/utils/functional.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/PY37/Lib/site-packages/django/urls/resolvers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="397" selection-start-line="397" selection-end-line="397" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/PY37/Lib/site-packages/django/core/checks/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/PY37/Lib/site-packages/django/core/management/commands/runserver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html" />
-    <entry file="file://C:/PY37/Lib/pathlib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21413">
-          <caret line="1139" selection-start-line="1139" selection-end-line="1139" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/PY37/Lib/pathlib.py" />
     <entry file="file://$PROJECT_DIR$/static/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -510,43 +473,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_subject/views_emf.html" />
-    <entry file="file://$PROJECT_DIR$/app_subject/views_channel_coverage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_subject/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app_subject/models.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_subject/emf_history.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="35" lean-forward="true" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_subject/views_emf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="53" lean-forward="true" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webplat/1.coffee" />
     <entry file="file://$PROJECT_DIR$/app_subject/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_subject/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-172">
-          <caret line="5" column="45" lean-forward="true" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_login/urls.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -558,66 +493,15 @@
     <entry file="file://$PROJECT_DIR$/app_login/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_subject/emf_cal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/PY37/Lib/_collections_abc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="665" selection-start-line="665" selection-end-line="665" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/PY37/Lib/os.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="673" selection-start-line="673" selection-end-line="673" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/PY37/Lib/site-packages/django/core/management/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="374" selection-start-line="374" selection-end-line="374" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#84#93#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/PY37/Lib/site-packages/django/apps/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="89" column="26" lean-forward="true" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/PY37/Lib/_collections_abc.py" />
+    <entry file="file://C:/PY37/Lib/os.py" />
+    <entry file="file://C:/PY37/Lib/site-packages/django/core/management/__init__.py" />
+    <entry file="file://C:/PY37/Lib/site-packages/django/apps/config.py" />
     <entry file="file://$PROJECT_DIR$/utility/PathOperating.py" />
     <entry file="file://$PROJECT_DIR$/webplat/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="760">
           <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_subject/emf_data_analyse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -638,48 +522,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/PY37/Lib/importlib/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2375">
-          <caret line="126" column="29" selection-start-line="126" selection-start-column="29" selection-end-line="126" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/PY37/Lib/importlib/__init__.py" />
+    <entry file="file://C:/PY37/Lib/importlib/_bootstrap.py" />
     <entry file="file://$PROJECT_DIR$/templates/login_hw.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="400">
           <caret line="16" column="49" selection-start-line="13" selection-start-column="8" selection-end-line="16" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/PY37/Lib/importlib/_bootstrap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18563">
-          <caret line="977" column="19" selection-start-line="977" selection-start-column="19" selection-end-line="977" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webplat/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#223#232#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/subject/emf_analyse.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="22" lean-forward="true" selection-end-line="15" selection-end-column="6" />
+        <state relative-caret-position="150">
+          <caret line="6" column="22" selection-end-line="15" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#2764#2770#0#HTML" expanded="true" />
@@ -696,34 +551,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/subject/emf_searching_reslut.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="20" lean-forward="true" selection-end-line="28" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/subject/emf_searching_reslut1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-end-line="22" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/subject/emf_resluts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="25" column="56" lean-forward="true" selection-start-line="25" selection-end-line="26" />
+        <state relative-caret-position="625">
+          <caret line="25" column="56" selection-start-line="25" selection-end-line="26" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -732,14 +563,204 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/subject/emf_searching_reslut2.html">
+    <entry file="file://$PROJECT_DIR$/webplat/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#223#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#84#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_assist/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_assist/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="54" column="38" lean-forward="true" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1567246390266" expanded="true" signature="175:180" ph="..." />
+            <marker date="1567246390266" expanded="true" signature="666:671" ph="..." />
+            <marker date="1567246390266" expanded="true" signature="950:955" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_subject/emf_history.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" lean-forward="true" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_subject/emf_cal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="35" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/history.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_subject/views_emf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="53" lean-forward="true" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_subject/views_channel_coverage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_subject/emf_data_analyse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="219" column="27" lean-forward="true" selection-start-line="215" selection-start-column="4" selection-end-line="219" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_assist/view_csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="97" column="95" selection-start-line="97" selection-start-column="95" selection-end-line="97" selection-end-column="95" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+            <marker date="1567248210264" expanded="true" signature="284:289" ph="..." />
+            <marker date="1567248210264" expanded="true" signature="1342:1347" ph="..." />
+            <marker date="1567248210264" expanded="true" signature="1788:1793" ph="..." />
+            <marker date="1567248210264" expanded="true" signature="3061:3066" ph="..." />
+            <marker date="1567248210264" expanded="true" signature="3317:3322" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_assist/migrations/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_subject/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="13" column="65" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_assist/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="16" selection-end-column="80" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/assist/csv_merge.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
-          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+          <caret line="19" selection-start-line="19" selection-end-line="20" selection-end-column="56" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/subject/emf_searching_reslut.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="22" column="20" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/subject/emf_searching_reslut2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="30" column="109" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="109" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/assist/csv_merge_resluts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/highcharts/exporting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/scripts/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/subject/emf_searching_reslut1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="24" selection-start-line="24" selection-end-line="25" selection-end-column="109" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

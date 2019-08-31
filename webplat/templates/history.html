@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>history record</title>
+</head>
+    <link rel="stylesheet" type="text/css" href="../../static/database_css/index_work.css">
+<body>
+    <a href="/assist/database/"><input type="button" value= "Main menu"></a>
+
+    <table>
+        <thead>
+        <th>CSI_RSRP</th>
+        <th>CSI_SINR</th>
+        <th>MCS</th>
+        <th>RB</th>
+        <th>iBLER</th>
+        <th>MAC_Thp</th>
+        <th>Rank</th>
+        </thead>
+        <tbody>
+        {% for item in history %}
+        <tr>
+            <td>{{ item.CSI_RSRP }}</td>
+            <td>{{ item.CSI_SINR }}</td>
+            <td>{{ item.MCS }}</td>
+            <td>{{ item.RB }}</td>
+            <td>{{ item.iBLER }}</td>
+            <td>{{ item.MAC_Thp }}</td>
+            <td>{{ item.Rank }}</td>
+        </tr>
+        {{ endfor }}
+        <tr>
+            <th colspan="6">
+                {% if invitation.has_previous %}
+                <a href="?page{{ invitation.previous_page_number }}"><input type="button" value="上一页"></a>
+                {% endif %}
+                <span>{{ invitation.number }} of {{ invitation.paginator.num_pages }}</span>
+                {% if invitation.has_next %}
+                <a href="?page{{ invitation.next_page_number }}"><input type="button" value="下一页"></a>
+                {% endif %}
+            </th>
+            <th></th>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>

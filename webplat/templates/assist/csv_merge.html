@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<% load staticfiles %>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/css/main.css' %}" rel="stylesheet">
+    <script type="test/javascript" src="{% static 'scripts/jquery.min.js' %}"></script>
+    <script type="test/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <!--[if lte IE 9]>
+    <script src="bootstrap/js/response.min.js"></script>
+    <script src="bootstrap/js/html5shiv.min.js"></script>
+    <![endif]-->
+    <title>csv文件合并</title>
+</head>
+<body>
+    <div class="panel" style="margin-top:20px;margin-left:3%;margin-right:3%;" >
+        <h4>请上传需进行合并的文档</h4>
+        <br>
+        <form enctype="multipart/form-data" action="/assist/csv_merge_load/" method="post">
+            <input type="file" name="myfile" multiple />
+            <br/>
+            <input type="submit" value="合并文档"/>  {{ upload_result }}
+            {% csrf_token %}
+        </form>
+    </div>
+    <div class="panel" style="margin-top:20px;margin-left:3%;margin-right:3%;" >
+        <a href="/index/" class="btn btn-large" style="background-color:#b9acde;">返回上级</a><br>
+    </div>
+</body>
+</html>

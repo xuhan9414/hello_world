@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<% load staticfiles %>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrap/css/main.css' %}" rel="stylesheet">
+    <script type="test/javascript" src="{% static 'scripts/jquery.min.js' %}"></script>
+    <script type="test/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <!--[if lte IE 9]>
+    <script src="bootstrap/js/response.min.js"></script>
+    <script src="bootstrap/js/html5shiv.min.js"></script>
+    <![endif]-->
+    <title>csv文件合并</title>
+</head>
+<body>
+    <div class="panel" style="margin-top:20px;margin-left:3%;margin-right:3%;" >
+        <h3>文件合并成功</h3>
+        <br>
+        <form enctype="multipart/form-data" action="/data_split_page/" method="post">
+            <input type="text" value="{{ results.user }}/{{ results.date }}/{{ results.time }}/{{ results.name }}"
+                   name="path" style="display: none"/>
+            <span>
+                {{ result }}
+            </span>
+            <a href="assist/medias2//{{ results.user }}/{{ results.date }}/{{ results.time }}/{{ results.name }}">点击下载合并文件</a>
+        </form>
+    </div>
+    <div class="a" style="margin-top:20px;margin-bottom:20px ;margin-left:35%;margin-right:3%;" >
+     <a href="/assist/csv/" class="btn btn-large" style="background-color: #b9acde;">返回上级</a>
+    </div>
+</body>
+</html>
