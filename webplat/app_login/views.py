@@ -7,13 +7,13 @@ user_list = [
 ]
 
 def log_page(request):
-    return render(request, "login_hw.html")
+    return render(request, "login.html")
 
 def index(request):
-    if request.session.has_key('user_id'):
+    # if request.session.has_key('user_id'):
         return render(request,'index.html')
-    else:
-        return redirect('/login/')
+    # else:
+    #     return redirect('/login/')
 
 def login_hw(request):
     s3 = ldap3.Server('china.huawei.com',port=389,use_ssl = False , get_info = ldap3.SCHEMA)
@@ -29,9 +29,19 @@ def login_hw(request):
     except:
         return render(request, 'login_hw.html', {'error': '密码错误'})
 
-# def login(request):
-#     if request.method =="POST":
-#         username = request.POST.get("username",None)
-#         password = request.POST.get("username",None)
-#
-#     return render(request,"index.html",{"data":user_list})
+def login(request):
+    user = request.POST.get("user_id")
+    pwd = request.POST.get("pass_word")
+    user_list = [
+        {'xh':'123456'},
+        {'mfq':'123456'},
+                 ]
+    temp = {user:pwd}
+    try:
+        if temp in user_list:
+            request.session['user_id'] = user
+            return redirect('/index/')
+        else:
+            return render(request, 'login.html', {'error': '密码错误'})
+    except:
+        return render(request, 'login_hw.html', {'error': '密码错误'})

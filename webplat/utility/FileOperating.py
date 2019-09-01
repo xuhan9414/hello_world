@@ -29,7 +29,7 @@ class FileOperating:
     def file_creating(self):
          date = time.strftime('%Y-%m-%d', time.localtime(time.time())) #获取日期
          clock = time.strftime('%h-%M-00'), time.localtime(time.time()) #获取时间
-         final_path = self.p + '/' + self.u +'/' + date + '/ ' + clock
+         final_path = self.p + '/' + self.u +'/' + date
 
          if os.path.exists(self.p):
             if os.path.exists(final_path):

@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.views.static import serve
 
 from app_login import views as view_login
-# from app_assist import urls as assist_urls
+from app_assist import urls as assist_urls
 # from app_ci import urls as ci_urls
 # from app_data_analyse import urls as app_data_analyse_urls
 from app_subject import urls as subject_urls
@@ -27,11 +27,12 @@ urlpatterns = [
     url('admin/', admin.site.urls),
 
     url(r'^$' , view_login.log_page),
-    # url(r'^login/' , view_login.login, name='login'),
-    url(r'^login_hw/' , view_login.login_hw, name='login_hw'),
+    url(r'^login/' , view_login.login, name='login'),
+    # url(r'^login_hw/' , view_login.login_hw, name='login_hw'),
     url(r'^index/' , view_login.index, name='index'),
 
     url(r'^subject/', include(subject_urls)),
+    url(r'^assist/', include(assist_urls)),
 
     url(r'^probeMedias/(?P<path>.*)$', serve,  #设置根目录
         {'document_root': 'E:\webplatform_data\ci\output_data'}),

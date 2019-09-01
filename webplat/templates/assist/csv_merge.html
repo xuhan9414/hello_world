@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<% load staticfiles %>
+{% load staticfiles %}
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -17,7 +17,7 @@
     <div class="panel" style="margin-top:20px;margin-left:3%;margin-right:3%;" >
         <h4>请上传需进行合并的文档</h4>
         <br>
-        <form enctype="multipart/form-data" action="/assist/csv_merge_load/" method="post">
+        <form enctype="multipart/form-data" action="/assist/csv_merge_load/" method="POST">
             <input type="file" name="myfile" multiple />
             <br/>
             <input type="submit" value="合并文档"/>  {{ upload_result }}

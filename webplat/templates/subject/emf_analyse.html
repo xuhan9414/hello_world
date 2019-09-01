@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<% load staticfiles %>
+{% load staticfiles %}
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -74,8 +74,7 @@
             <form action="/subject/emf_add/" method="get">
                 <h4>通道能量计算</h4>
                 <br/>
-                单通道能力(0.1dBm):<input type="text" id = "a" name="a"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通道数:
-                <input type="text"> id="b" name="b"> <br>
+                单通道能力(0.1dBm):<input type="text" id = "a" name="a"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通道数:<input type="text" id="b" name="b"> <br>
                 <button type="button" id="sum">计算</button>
                 <p>AAU总能量： <span id="result"></span></p>
             </form>
@@ -87,9 +86,9 @@
                         var b = $("#b").val();
                         $.get("/subject/emf_add/",{'a':a,'b':b}),function (ret) {
                             $('#result').html(ret)
-                        })
+                            })
+                        });
                     });
-                });
                 </script>
         </div>
 {#    <hr style="height: 1px;border:none;border-top:1px solid #555555;"/>#}

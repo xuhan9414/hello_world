@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+    <h1 style="margin-top:20px;margin-left:3%;margin-right:3%;">用户输入</h1>
+            <form method='POST' action="/login/" enctype="multipart/form-data" >
+    <div>
+        <span>
+            账号:
+        </span>
+            <input type="text" name = "user_id"/>
+    </div>
+            <div>
+        <span>
+            密码:
+        </span>
+            <input type="password" name = "pass_word"/>
+                <h5 style="color:red">{{ error }}</h5>
+    </div>
+{#        { % csrf_token % }#}
+{#        {{ uf.as_p }}#}
+        <input type="submit" value="ok"/>
+        </form>
+
+    <script src="/static/scripts/jquery.min.js"></script>
+</body>
+</html>

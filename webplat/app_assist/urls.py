@@ -5,7 +5,7 @@ from app_assist import view_csv
 
 urlpatterns = [
 
-    url(r'^csv/', view_csv.csv_merge_time_searching),
+    url(r'^csv/', view_csv.csv_merge_searching),
     url(r'^csv_merge_load/', view_csv.csv_merge_load),
     url(r'^medias2/(?P<path>.*)$',serve,
         {'document_root':'D:/merge_data/output_data'}),

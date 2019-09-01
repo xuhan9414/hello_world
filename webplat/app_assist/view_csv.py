@@ -4,9 +4,10 @@ import pandas as pd
 import openpyxl
 import csv
 from utility.FileOperating import FileOperating
+import sys
 
-input_dir = r"D:\emf_testing_data\input_data"
-output_dir = r"D:\emf_testing_data\output_data"
+input_dir = r"D:\merge_data\input_data"
+output_dir = r"D:\merge_data\output_data"
 
 def csv_merge_searching(request):
     return render(request, 'assist/csv_merge.html')
@@ -40,12 +41,11 @@ def add_sheet_xlsx(output_final, sheet_name,value,title2):
 def merge_data(name1,input_final,output_final,title):
     output_path = output_final + '\\' + title+ '.xlsx'
     for k in range(len(name1)):
-        input_path = open(input_final + '\\' + name1[k],'rt',encoding='UTF16')
+        input_path = open(input_final + '\\' + name1[k],'rt',encoding='gbk')
         df = csv.reader(input_path)
         li1 = []
         for i in df:
             li1.append(i)
-
         if k==0:
             write_excel_xlsx(output_path,name1[k],li1)
         else:
@@ -59,7 +59,7 @@ def csv_merge_load(request):
         f.root_creating()
         input_final, input_date, input_time = f.file_creating()
 
-        f = FileOperating(output_dir, user)
+        f = FileOperating(output_dir, user_id)
         f.root_creating()
         output_final, output_date, output_time = f.file_creating()
 
