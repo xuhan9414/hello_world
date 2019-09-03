@@ -28,6 +28,8 @@ urlpatterns = [
 
     url(r'^$' , view_login.log_page),
     url(r'^login/' , view_login.login, name='login'),
+    url(r'^registered_page/' , view_login.registered_page,name='registered_page'),
+    url(r'^registered/' , view_login.registered,name='registered'),
     # url(r'^login_hw/' , view_login.login_hw, name='login_hw'),
     url(r'^index/' , view_login.index, name='index'),
 

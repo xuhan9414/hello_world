@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新用户注册</title>
+</head>
+<body>
+    <h2 style="margin-top:200px;margin-left:46%;margin-right:0%;">新用户注册</h2>
+    <form method='POST' action="/registered/" enctype="multipart/form-data" >
+    <div style="font-size:15px;font-family:宋体;margin-left:40%;margin-right:0%;">
+        <span>
+            请输入账号:
+        </span>
+        &nbsp
+            <input style="width:150px;height:20px"   type="text" name = "new_user_id"/>
+        <br>
+        <br>
+                <span>
+            请输入密码:
+        </span>
+        &nbsp
+            <input style="width:150px;height:20px"   type="text" name = "pass_word1"/>
+        <br>
+        <br>
+                       <span>
+            请确认密码:
+        </span>
+        &nbsp
+            <input style="width:150px;height:20px"   type="text" name = "pass_word2"/>
+        <br>
+        <br>
+                               <span>
+            请输入邀请码:
+        </span>
+            <input style="width:150px;height:20px"   type="text" name = "Invite_code"/>
+    </div>
+        <div style="font-size:24px;font-family: Arial;margin-left:45%;margin-right:0%;">
+        <input type="submit" value="注册"/>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp
+        <input type="button"  value="直接登录" onclick="javascrtpt:window.location.href='/'" />
+
+    </div>
+        </form>
+    <br>
+            <a style="color:#F00;font-size:13px;margin-left:46%">{{ error }}</a>
+
+</body>
+</html>

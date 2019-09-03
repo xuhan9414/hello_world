@@ -1,3 +1,4 @@
+
 from django.shortcuts import render ,HttpResponse
 import os
 import pandas as pd
@@ -5,6 +6,7 @@ import openpyxl
 import csv
 from utility.FileOperating import FileOperating
 import sys
+import numpy as np
 
 input_dir = r"D:\merge_data\input_data"
 output_dir = r"D:\merge_data\output_data"
@@ -38,18 +40,31 @@ def add_sheet_xlsx(output_final, sheet_name,value,title2):
                 ws2.cell(row=i + 1, column=j + 1, value=str(value[i][j]))
         wb.save(path)
 
+# def merge_data(name1,input_final,output_final,title):
+#     output_path = output_final + '\\' + title+ '.xlsx'
+#     for k in range(len(name1)):
+#         input_path = open(input_final + '\\' + name1[k],'rt',encoding='gb18030',errors='ignore')
+#         df = csv.reader(input_path)
+#         print(df)
+#         li1 = []
+#         for i in df:
+#             li1.append(i)
+#         if k==0:
+#             write_excel_xlsx(output_path,name1[k],li1)
+#         else:
+#             add_sheet_xlsx(output_final, name1[k], li1, title)
+
 def merge_data(name1,input_final,output_final,title):
     output_path = output_final + '\\' + title+ '.xlsx'
     for k in range(len(name1)):
-        input_path = open(input_final + '\\' + name1[k],'rt',encoding='gbk')
-        df = csv.reader(input_path)
-        li1 = []
-        for i in df:
-            li1.append(i)
+        input_path = input_final + '\\' + name1[k]
+        df = pd.read_excel(input_path)
+        df1 = np.array(df)
+        df2 = df1.tolist()
         if k==0:
-            write_excel_xlsx(output_path,name1[k],li1)
+            write_excel_xlsx(output_path,name1[k],df2)
         else:
-            add_sheet_xlsx(output_final, name1[k], li1, title)
+            add_sheet_xlsx(output_final, name1[k], df2, title)
 
 def csv_merge_load(request):
     user_id = request.session.get('user_id')
